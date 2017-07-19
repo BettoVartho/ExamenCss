@@ -1,0 +1,153 @@
+body{
+	animation: slide 2s;
+}
+@-webkit-keyframes slide{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0;
+	}
+}
+body {
+	background-color: #02010a;
+	color: white;
+	font-family: 'Josefin Sans';
+	width: 98%;
+}
+.menu{
+	font-family: 'Josefin Sans' bold;
+}
+.paisaje{
+	text-decoration: none;
+}
+.menu>a{
+	color: white;
+}
+.inicio::after, .paisaje::after, .retrato::after{
+	content: "|";
+	color: white;
+	font-weight: bold;
+}
+.inicio:hover, .retrato:hover{
+	text-decoration: line-through;
+}
+#encabezado{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	padding: 6px;
+}
+svg{
+	width= 10px;
+}
+.menu{
+	float: right;
+	margin: 0px auto;
+	transform: translateY(-50px);
+}
+header h1{
+	color: white;
+	text-align: left;
+	font-family: 'helvetica' bold oblique;
+	font-size: 2em;
+	box-shadow: 2px #02010a;
+}
+#contenido h1{
+text-align: center;
+}
+picture[source$=jpg]{
+	width: 100%;
+}
+#ima2{
+	transform: translateY(5px);
+}
+#ima3{
+	transform: translateY(13px);
+}
+#ima1{
+	filter: blur(10px);
+	-webkit_filter: blur(10px);
+}
+#ima2, #ima4, #ima6{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+#ima3{
+	filter: sepia(90%);
+	-webkit-filter: sepia(90%);
+}
+.contenedor{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	}
+#pie{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+#pie{
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #900C3F !important;
+	width: 100%;
+	min-height: 180px;
+	max-height: 550px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6d5c5;
+	text-align: center
+}
+h3{
+	text-shadow: 2px 2px 4px #02010a;
+	color: aliceblue;
+}
+img[src$=png]{
+	max-width: 40px;
+}
+img[src$=png]:hover{
+	max-width: 45px;
+}@media (min-width:420px) {
+	#ima1, #ima2, #ima3, #ima4, #ima5, #ima6{
+		width: 100%;
+	}
+	.abajo{
+		width: 100%;
+	}
+}
+@media (min-width: 600px) {
+	#ima1, #ima6, #ima2, #ima3, #ima4, #ima5{
+		width: 50%;
+	}
+	.contenedor{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.abajo{
+		width: 100%;
+	}
+	footer{
+	box-sizing: border-box;
+	box-sizing: -webkit-border-box;
+	}
+}
+@media (min-width:900px) {
+	#ima1, #ima6, #ima2, #ima3, #ima4, #ima5{
+		width: 50%;
+	}
+	.contenedor{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.abajo{
+			width: 25%;
+		}
+	}
